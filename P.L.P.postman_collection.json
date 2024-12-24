@@ -1,9 +1,15 @@
 {
 	"info": {
+
 		"_postman_id": "60619d7e-f4e7-4bc7-9e44-38fd8bf228a2",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "39457052"
+		"_postman_id": "f8cad05e-9f2b-4e59-a99b-b5c91ebfe4bf",
+		"name": "P.L.P",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20212800",
+		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-f8cad05e-9f2b-4e59-a99b-b5c91ebfe4bf?action=share&source=collection_link&creator=20212800"
 	},
 	"item": [
 		{
@@ -1335,6 +1341,7 @@
 					"response": []
 				}
 			]
+
 		},
 		{
 			"name": "markets",
@@ -1485,6 +1492,7 @@
 					]
 				}
 			]
+
 		}
 	]
 }
