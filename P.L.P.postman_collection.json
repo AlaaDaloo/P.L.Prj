@@ -1,5 +1,10 @@
 {
 	"info": {
+
+		"_postman_id": "60619d7e-f4e7-4bc7-9e44-38fd8bf228a2",
+		"name": "P.L.P",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39457052"
 		"_postman_id": "f8cad05e-9f2b-4e59-a99b-b5c91ebfe4bf",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
@@ -1336,6 +1341,158 @@
 					"response": []
 				}
 			]
+
+		},
+		{
+			"name": "markets",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/getMarkets/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getMarkets",
+								"4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/getMarkets/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getMarkets",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Dec 2024 17:07:31 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 16,\n        \"name\": \"King over\",\n        \"photo\": \"king over.png\",\n        \"location\": \"damascus\",\n        \"category_id\": 1,\n        \"created_at\": \"2024-12-23T13:18:08.000000Z\",\n        \"updated_at\": \"2024-12-23T13:18:08.000000Z\"\n    },\n    {\n        \"id\": 17,\n        \"name\": \"Action pizza\",\n        \"photo\": \"action pizza.png\",\n        \"location\": \"damascus\",\n        \"category_id\": 1,\n        \"created_at\": \"2024-12-23T13:18:08.000000Z\",\n        \"updated_at\": \"2024-12-23T13:18:08.000000Z\"\n    },\n    {\n        \"id\": 18,\n        \"name\": \"Bufflay Burger\",\n        \"photo\": \"Bufflay Burger.png\",\n        \"location\": \"damascus\",\n        \"category_id\": 1,\n        \"created_at\": \"2024-12-23T13:18:08.000000Z\",\n        \"updated_at\": \"2024-12-23T13:18:08.000000Z\"\n    },\n    {\n        \"id\": 19,\n        \"name\": \"Crispy way\",\n        \"photo\": \"Crispy way.png\",\n        \"location\": \"damascus\",\n        \"category_id\": 1,\n        \"created_at\": \"2024-12-23T13:18:08.000000Z\",\n        \"updated_at\": \"2024-12-23T13:18:08.000000Z\"\n    },\n    {\n        \"id\": 20,\n        \"name\": \"Beit al mukhtar\",\n        \"photo\": \"Beit al mukhtar.png\",\n        \"location\": \"damascus\",\n        \"category_id\": 1,\n        \"created_at\": \"2024-12-23T13:18:08.000000Z\",\n        \"updated_at\": \"2024-12-23T13:18:08.000000Z\"\n    }\n]"
+						},
+						{
+							"name": "no markets",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/getMarkets/4",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getMarkets",
+										"4"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Mon, 23 Dec 2024 17:07:56 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No markets found!\"\n}"
+						}
+					]
+				}
+			]
+
 		}
 	]
 }

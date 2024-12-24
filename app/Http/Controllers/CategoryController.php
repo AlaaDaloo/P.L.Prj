@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Services\CategoryService;
 
@@ -19,10 +20,9 @@ class CategoryController extends Controller
         $categories = $this->categoryService->getCategories();
 
         if (isset($categories['message'])) {
-         return response()->json($categories, 404); 
+            return response()->json($categories, 404);
         }
 
-        return response()->json($categories); 
+        return response()->json($categories);
     }
-
 }

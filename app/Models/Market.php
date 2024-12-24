@@ -5,11 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Market extends Model
 {
     use HasFactory;
-    public function markets()
+    public function category()
     {
-        return $this->hasMany(Market::class);
+        $this->belongsTo(Category::class);
     }
 }
