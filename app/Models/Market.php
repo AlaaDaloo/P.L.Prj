@@ -12,4 +12,8 @@ class Market extends Model
     {
         $this->belongsTo(Category::class);
     }
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
 }
