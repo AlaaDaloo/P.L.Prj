@@ -24,5 +24,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             MarketSeeder::class
         ]);
+        $this->call([
+            ProductSeeder::class
+        ]);
     }
 }

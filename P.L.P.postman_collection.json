@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "60619d7e-f4e7-4bc7-9e44-38fd8bf228a2",
+		"_postman_id": "90812c1e-d9cb-4449-9ea3-894374877dbe",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "39457052"
@@ -1362,7 +1362,13 @@
 							"name": "success",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "localhost:8000/api/getMarkets/1",
 									"host": [
@@ -1424,7 +1430,13 @@
 							"name": "no markets",
 							"originalRequest": {
 								"method": "GET",
-								"header": [],
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
 								"url": {
 									"raw": "localhost:8000/api/getMarkets/4",
 									"host": [
@@ -1481,6 +1493,174 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"message\": \"No markets found!\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "products",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getProducts/25",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getProducts",
+								"25"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getProducts/5",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getProducts",
+										"5"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Dec 2024 13:06:53 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 21,\n        \"name\": \"BBQ chicken sandwich\",\n        \"photo\": \"fast Food\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 5,\n        \"created_at\": \"2024-12-25T11:25:55.000000Z\",\n        \"updated_at\": \"2024-12-25T11:25:55.000000Z\"\n    },\n    {\n        \"id\": 22,\n        \"name\": \"Crispy Sandwich\",\n        \"photo\": \"fast Food\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 5,\n        \"created_at\": \"2024-12-25T11:25:55.000000Z\",\n        \"updated_at\": \"2024-12-25T11:25:55.000000Z\"\n    },\n    {\n        \"id\": 23,\n        \"name\": \"Special Sandwich\",\n        \"photo\": \"fast Food\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 5,\n        \"created_at\": \"2024-12-25T11:25:55.000000Z\",\n        \"updated_at\": \"2024-12-25T11:25:55.000000Z\"\n    },\n    {\n        \"id\": 24,\n        \"name\": \"Spicy fillet\",\n        \"photo\": \"fast Food\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 5,\n        \"created_at\": \"2024-12-25T11:25:55.000000Z\",\n        \"updated_at\": \"2024-12-25T11:25:55.000000Z\"\n    },\n    {\n        \"id\": 25,\n        \"name\": \"Turkish Sandwich\",\n        \"photo\": \"fast Food\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 5,\n        \"created_at\": \"2024-12-25T11:25:55.000000Z\",\n        \"updated_at\": \"2024-12-25T11:25:55.000000Z\"\n    }\n]"
+						},
+						{
+							"name": "no products",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getProducts/25",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getProducts",
+										"25"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 25 Dec 2024 13:09:07 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No products found!\"\n}"
 						}
 					]
 				}
