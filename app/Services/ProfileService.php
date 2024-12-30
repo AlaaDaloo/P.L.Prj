@@ -39,13 +39,24 @@ class ProfileService
         if (isset($data['email'])) {
             $user->email = $data['email'];
         }
-        if (isset($data['password'])) {
-            $user->password = Hash::make($data['password']);
-            //$user->api_token = Str::random(80);
-        }
+        
         $user->save();
 
         return $user;
+    }
+
+    public function updatePassword($user, $currentPassword, $newPassword)
+    {
+        if (!Hash::check($currentPassword, $user->password)) {
+            throw new \Exception('Current password is incorrect.');
+        }
+
+        if (strlen($newPassword) < 8) {
+            throw new \Exception('The new password must be at least 8 characters.');
+        }
+
+        $user->password = Hash::make($newPassword);
+        $user->save();
     }
 
     public function uploadProfilePicture($user, $file)

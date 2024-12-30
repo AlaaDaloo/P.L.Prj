@@ -33,7 +33,6 @@ class ProfileController extends Controller
             'first_name' => 'sometimes|string|max:255',
             'last_name' => 'sometimes|string|max:255',
             'phone_number' => 'sometimes|string|max:15|unique:users,phone_number,' .$user->id,
-            'password' => 'sometimes|string|min:8',
             'location' => 'sometimes|string|max:255',
             'email' => 'sometimes|email|max:255',
         ]);
@@ -47,6 +46,24 @@ class ProfileController extends Controller
         return response()->json(['message' => 'Profile updated successfully', 'user' => $updatedUser]);
     }
 
+    public function updatePassword(Request $request)
+    {
+        $validator = Validator::make($request->all(), [
+            'current_password' => 'required|string',
+            'new_password' => 'required|string|min:8|confirmed',
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json(['errors' => $validator->errors()], 422);
+        }
+
+        try {
+            $this->profileService->updatePassword(Auth::user(), $request->current_password, $request->new_password);
+            return response()->json(['message' => 'Password updated successfully.']);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], 400);
+        }
+    }
     public function uploadProfilePicture(Request $request)
     {
         $user = $request->user();

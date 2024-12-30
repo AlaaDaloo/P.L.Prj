@@ -16,7 +16,7 @@ class ProductSeeder extends Seeder
         //fast food -> markets -> products
         Product::create([
             'name' => 'Orginal Wings',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -25,7 +25,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Classic Burger',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -34,7 +34,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Chicken fries',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -43,7 +43,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Chili Cheese Nuggets',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -52,7 +52,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => ' Cheese  burger',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -61,7 +61,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Four seasons pizza',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -70,7 +70,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Vegetable pizza',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -79,7 +79,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Margherita pizza',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -88,7 +88,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Chicken pizza',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -97,7 +97,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Pepperoni pizza',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -106,7 +106,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'onion rings',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -115,7 +115,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Flat burger',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -124,7 +124,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Mushroom burger',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -133,7 +133,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Buffalo boneless',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -142,7 +142,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'King starter',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -151,7 +151,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'BBQ crispy burger ',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -160,7 +160,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Special Burger',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -169,7 +169,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Mozzarella fingers',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -178,7 +178,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Fried chicken',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -187,7 +187,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'pasta salad',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -196,7 +196,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'BBQ chicken sandwich',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -205,7 +205,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Crispy Sandwich',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -214,7 +214,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Special Sandwich',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -223,7 +223,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Spicy fillet',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -232,7 +232,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Turkish Sandwich',
-            'photo' => 'fast Food',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'price' => 10000,
             'description' => 'Fast food',
             'count' => 500 ,
@@ -244,7 +244,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Sketch books',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -254,7 +254,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Colors',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -264,7 +264,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Charcoal pens',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -274,7 +274,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'gloves for painting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -283,7 +283,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Drawing boards',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -293,7 +293,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Bags',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -303,7 +303,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Notebooks',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -313,7 +313,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Pens',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -323,7 +323,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Highlighter pens',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -333,7 +333,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Erasers',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -343,7 +343,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Beautiful things',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -353,7 +353,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'les miserables',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -363,7 +363,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'ecstasy',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -373,7 +373,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Physics of happiness',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -383,7 +383,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'because you are god',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -393,7 +393,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'computer mouse',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -403,7 +403,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'mouse pad',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -413,7 +413,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'keyboard',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -423,7 +423,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'laptop headphones',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -433,7 +433,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'laptop table',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -443,7 +443,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Office lighting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -453,7 +453,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Long lighting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -463,7 +463,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Wall lighting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -473,7 +473,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Short lighting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -483,7 +483,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Ceiling lighting',
-            'photo' => 'Office supplies',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'price' => 10000,
             'description' => 'Office supplies',
             'count' => 500 ,
@@ -494,7 +494,7 @@ class ProductSeeder extends Seeder
         //makeup -> markets -> products
         Product::create([
             'name' => 'lipstick',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -504,7 +504,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
         'name' => 'Foundation',
-        'photo' => 'makeup',
+        'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
         'price' => 10000,
         'description' => 'makeup',
         'count' => 500 ,
@@ -514,7 +514,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Eyeshadow',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -523,7 +523,7 @@ class ProductSeeder extends Seeder
         ]);
         Product::create([
             'name' => 'Perfume',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -533,7 +533,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'highlighter',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -543,7 +543,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'lipstick',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -553,7 +553,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Foundation',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -563,7 +563,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Perfume',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -573,7 +573,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'powder',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -583,7 +583,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'eyebrow gel',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -593,7 +593,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Foundation',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -603,7 +603,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'lipstick',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -613,7 +613,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'toner',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -623,7 +623,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'mascara',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -633,7 +633,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'makeup fixer',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -643,7 +643,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Bene tint',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -653,7 +653,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'eyeliner',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -663,7 +663,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'blusher',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -673,7 +673,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'mascara',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -683,7 +683,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'makeup fixer',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -693,7 +693,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Concealer',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -703,7 +703,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'lipstick',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -713,7 +713,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Bronzer',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -723,7 +723,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'mascara',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -733,7 +733,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'makeup fixer',
-            'photo' => 'makeup',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'price' => 10000,
             'description' => 'makeup',
             'count' => 500 ,
@@ -743,7 +743,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Neck collar',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -753,7 +753,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Ring',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -763,7 +763,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -773,7 +773,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Ear ring',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -783,7 +783,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'neck collar',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -793,7 +793,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'ring',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -803,7 +803,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => ' neck collar',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -813,7 +813,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'watch',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -823,7 +823,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -833,7 +833,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Set',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -843,7 +843,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bag',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -853,7 +853,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'watch',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -863,7 +863,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'sun glasses',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -873,7 +873,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -883,7 +883,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'Ring',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -893,7 +893,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bag',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -903,7 +903,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'wallet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -913,7 +913,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'sun glasses',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -923,7 +923,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'women bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -933,7 +933,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'men bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -943,7 +943,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bag',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -953,7 +953,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'watch',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -963,7 +963,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'sun glasses',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -973,7 +973,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bracelet',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -983,7 +983,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'ring',
-            'photo' => 'jewelry',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'price' => 10000,
             'description' => 'jewelry',
             'count' => 500 ,
@@ -993,7 +993,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'tona',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1003,7 +1003,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'mortadella',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1013,7 +1013,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'corn',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1023,7 +1023,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'beans',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1033,7 +1033,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'chick peas',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1043,7 +1043,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'toast',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1053,7 +1053,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'tortilla',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1063,7 +1063,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'tourist bread',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1073,7 +1073,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bread',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1083,7 +1083,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'french bread',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1093,7 +1093,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'nutella',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1103,7 +1103,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'kinder',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1113,7 +1113,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'kit kat',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1123,7 +1123,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'bounty',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1133,7 +1133,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'twix',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1143,7 +1143,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'liz',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1153,7 +1153,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'pringles',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1163,7 +1163,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'cheetos',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1173,7 +1173,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'doritos',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1183,7 +1183,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'ruffles',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1193,7 +1193,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'red bull',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1203,7 +1203,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'coca-cola',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1213,7 +1213,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'orange juice',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1223,7 +1223,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => '7up',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,
@@ -1233,7 +1233,7 @@ class ProductSeeder extends Seeder
 
         Product::create([
             'name' => 'pepsi',
-            'photo' => 'food stuffs',
+            'photo' => 'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'price' => 10000,
             'description' => 'food stuffs',
             'count' => 500 ,

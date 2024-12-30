@@ -15,152 +15,152 @@ class MarketSeeder extends Seeder
     {
         Market::create([
             'name'=>'King over',
-            'photo'=>'king over.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'location'=>'damascus',
             'category_id'=>1,
         ]);
         Market::create([
             'name'=>'Action pizza',
-            'photo'=>'action pizza.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'location'=>'damascus',
             'category_id'=>1,
         ]);
         Market::create([
             'name'=>'Bufflay Burger',
-            'photo'=>'Bufflay Burger.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'location'=>'damascus',
             'category_id'=>1,
         ]);
         Market::create([
             'name'=>'Crispy way',
-            'photo'=>'Crispy way.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'location'=>'damascus',
             'category_id'=>1,
         ]);
         Market::create([
             'name'=>'Beit al mukhtar',
-            'photo'=>'Beit al mukhtar.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg',
             'location'=>'damascus',
             'category_id'=>1,
         ]);
         Market::create([
             'name'=>'Art Supplies',
-            'photo'=>'nnn.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'location'=>'dubai',
             'category_id'=>2,
         ]);
         Market::create([
             'name'=>'school Supplies',
-            'photo'=>'school.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'location'=>'dubai',
             'category_id'=>2,
         ]);
         Market::create([
             'name'=>'Types of books',
-            'photo'=>'books.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'location'=>'dubai',
             'category_id'=>2,
         ]);
         Market::create([
             'name'=>'laptop accessories',
-            'photo'=>'accessories.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'location'=>'dubai',
             'category_id'=>2,
         ]);
         Market::create([
             'name'=>'type of lighting',
-            'photo'=>'light.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/abw5hASAxbcfrdNgRvR7CxAtg8vCZDD4qLAfveEp.jpg',
             'location'=>'dubai',
             'category_id'=>2,
         ]);
         Market::create([
             'name'=>'Dior',
-            'photo'=>'dior.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'location'=>'damascus',
             'category_id'=>3,
         ]);
         Market::create([
             'name'=>'Chanel',
-            'photo'=>'chanel.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'location'=>'homs',
             'category_id'=>3,
         ]);
         Market::create([
             'name'=>'Sheglam',
-            'photo'=>'sheglam.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'location'=>'hama',
             'category_id'=>3,
         ]);
         Market::create([
             'name'=>'Benefit',
-            'photo'=>'benefit.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'location'=>'US',
             'category_id'=>3,
         ]);
         Market::create([
             'name'=>'Maybeline',
-            'photo'=>'maybeline.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/YLlZtSwW2uKOmSH64vYt1rfsbFzkscBjEo5H3kUL.jpg',
             'location'=>'dubai',
             'category_id'=>3,
         ]);
         Market::create([
             'name'=>'Pandora',
-            'photo'=>'Pandora.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'location'=>'damascus',
             'category_id'=>4,
         ]);
         Market::create([
             'name'=>'Swarovski',
-            'photo'=>'Swarovski.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'location'=>'damascus',
             'category_id'=>4,
         ]);
         Market::create([
             'name'=>'Fendi',
-            'photo'=>'Fendi.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'location'=>'damascus',
             'category_id'=>4,
         ]);
         Market::create([
             'name'=>'Prada',
-            'photo'=>'prada.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'location'=>'damascus',
             'category_id'=>4,
         ]);
         Market::create([
             'name'=>'Gucci',
-            'photo'=>'Gucci.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/L1AqRTbO4yFPb2pneL92wohQm8xQ1nGTioEw94gV.jpg',
             'location'=>'damascus',
             'category_id'=>4,
         ]);
 
         Market::create([
             'name'=>'Canned Food',
-            'photo'=>'canned.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'location'=>'dubai',
             'category_id'=>5,
         ]);
         Market::create([
             'name'=>'type of bread',
-            'photo'=>'bread.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'location'=>'dubai',
             'category_id'=>5,
         ]);
         Market::create([
             'name'=>'type of chocolate',
-            'photo'=>'chocolate.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'location'=>'dubai',
             'category_id'=>5,
         ]);
         Market::create([
             'name'=>'type of chips',
-            'photo'=>'chips.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'location'=>'dubai',
             'category_id'=>5,
         ]);
         Market::create([
             'name'=>'type of drink',
-            'photo'=>'drink.png',
+            'photo'=>'http://localhost:8000/storage/profile_pictures/zHZ4qG1rhm0ir3WWq3q7P99YMRSssiyue048FILq.jpg',
             'location'=>'dubai',
             'category_id'=>5,
         ]);
