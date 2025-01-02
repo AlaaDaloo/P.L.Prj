@@ -18,7 +18,9 @@ class ProductController extends Controller
             return response()->json($products, 404);
         }
         return response()->json($products, 200);
-
-
+    }
+    public function getProductDetails($id){
+    $product = $this->productService->getProductDetails($id);
+    return response()->json($product, 200);
     }
 }

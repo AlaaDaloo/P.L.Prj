@@ -14,4 +14,8 @@ class ProductService{
         }
         return $products;
     }
+    public function getProductDetails($id){
+        $product = Product::find($id);
+        return $product;
+    }
 }
