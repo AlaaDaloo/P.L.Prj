@@ -35,3 +35,4 @@ Route::get('/getCategories' , [CategoryController::class , 'getCategories']);
 Route::get('/getMarkets/{id}' , [MarketController::class, 'getMarkets']);
 Route::get('/getProducts/{id}' , [ProductController::class, 'getProducts']);
 Route::get('/getProductDetails/{id}' , [ProductController::class, 'getProductDetails']);
+Route::get('/search', [ProductController::class, 'search']); 

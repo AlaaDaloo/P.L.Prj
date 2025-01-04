@@ -16,6 +16,22 @@ class ProductService{
     }
     public function getProductDetails($id){
         $product = Product::find($id);
+
+        if(!$product){
+            return ['message' => 'No products found!'];
+        }
+
         return $product;
+    }
+
+    public function search(string $query)
+    {
+        $products = Product::where('name', 'LIKE', "%$query%")->get();
+        $markets = Market::where('name', 'LIKE', "%$query%")->get();
+
+        return [
+            'products' => $products,
+            'markets' => $markets,
+        ];
     }
 }

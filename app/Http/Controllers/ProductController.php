@@ -21,6 +21,20 @@ class ProductController extends Controller
     }
     public function getProductDetails($id){
     $product = $this->productService->getProductDetails($id);
+
+    if (isset($categories['message'])) {
+        return response()->json($product, 404);
+    }
+
     return response()->json($product, 200);
+    }
+
+    public function search(Request $request)
+    {
+        $query = $request->get('query', '');
+
+        $results = $this->productService->search($query);
+
+        return response()->json($results);
     }
 }
