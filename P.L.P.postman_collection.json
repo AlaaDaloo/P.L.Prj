@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "e28ff4f0-5f54-4890-9b7b-d591d5fd09bf",
+		"_postman_id": "ea0bd0bb-db66-4779-aa8f-27df6ae74934",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39457052"
+		"_exporter_id": "20212800",
+		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-ea0bd0bb-db66-4779-aa8f-27df6ae74934?action=share&source=collection_link&creator=20212800"
 	},
 	"item": [
 		{
@@ -1340,7 +1341,7 @@
 			"name": "markets",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "get markets by category id",
 					"request": {
 						"method": "GET",
 						"header": [],
@@ -1502,7 +1503,7 @@
 			"name": "products",
 			"item": [
 				{
-					"name": "New Request",
+					"name": "get products by market id",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1661,9 +1662,36 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"message\": \"No products found!\"\n}"
-						},
+						}
+					]
+				},
+				{
+					"name": "get product details",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getProductDetails/25",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getProductDetails",
+								"25"
+							]
+						}
+					},
+					"response": [
 						{
-							"name": "getProductDetails",
+							"name": "success",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -1674,7 +1702,7 @@
 									}
 								],
 								"url": {
-									"raw": "localhost:8000/api/getProductDetails/450",
+									"raw": "localhost:8000/api/getProductDetails/25",
 									"host": [
 										"localhost"
 									],
@@ -1682,7 +1710,7 @@
 									"path": [
 										"api",
 										"getProductDetails",
-										"450"
+										"25"
 									]
 								}
 							},
@@ -1700,7 +1728,7 @@
 								},
 								{
 									"key": "X-Powered-By",
-									"value": "PHP/8.2.12"
+									"value": "PHP/8.3.6"
 								},
 								{
 									"key": "Cache-Control",
@@ -1708,7 +1736,239 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 02 Jan 2025 17:37:58 GMT"
+									"value": "Sat, 04 Jan 2025 09:18:16 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 25,\n    \"name\": \"Turkish Sandwich\",\n    \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n    \"price\": 10000,\n    \"description\": \"Fast food\",\n    \"count\": 500,\n    \"available\": 1,\n    \"market_id\": 5,\n    \"created_at\": \"2025-01-04T00:18:32.000000Z\",\n    \"updated_at\": \"2025-01-04T00:18:32.000000Z\"\n}"
+						},
+						{
+							"name": "product not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getProductDetails/255",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getProductDetails",
+										"255"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 04 Jan 2025 09:23:09 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"No products found!\"\n}"
+						}
+					]
+				},
+				{
+					"name": "search",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "localhost:8000/api/search?query=ac",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search"
+							],
+							"query": [
+								{
+									"key": "query",
+									"value": "ac"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "order",
+			"item": [
+				{
+					"name": "create order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|jtecnCHqbFBMfKoSRlGyLt1XA070ISQA1YYn9GqE37752977",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/create_order",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"create_order"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/create_order",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"create_order"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jan 2025 15:17:16 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -1728,7 +1988,83 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"id\": 25,\n    \"name\": \"Turkish Sandwich\",\n    \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n    \"price\": 10000,\n    \"description\": \"Fast food\",\n    \"count\": 500,\n    \"available\": 1,\n    \"market_id\": 5,\n    \"created_at\": \"2025-01-02T15:24:00.000000Z\",\n    \"updated_at\": \"2025-01-02T15:24:00.000000Z\"\n}"
+							"body": "{\n    \"message\": \"Order created successfully.\",\n    \"order\": {\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"sharkii\",\n        \"total_price\": 30000,\n        \"tax\": 360,\n        \"delivery_charge\": 900,\n        \"final_bill\": 31260,\n        \"user_id\": 1,\n        \"updated_at\": \"2025-01-07T15:17:16.000000Z\",\n        \"created_at\": \"2025-01-07T15:17:16.000000Z\",\n        \"id\": 8\n    }\n}"
+						},
+						{
+							"name": "miss quantity",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"products\": [\n    {\n      \"id\": 1\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/create_order",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"create_order"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.3.6"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 07 Jan 2025 15:23:46 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "56"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The products.0.quantity field is required.\",\n    \"errors\": {\n        \"products.0.quantity\": [\n            \"The products.0.quantity field is required.\"\n        ]\n    }\n}"
 						}
 					]
 				}
