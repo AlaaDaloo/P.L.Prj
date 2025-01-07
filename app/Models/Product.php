@@ -11,4 +11,8 @@ class Product extends Model
     public function market(){
         return $this->belongsTo(Market::class);
     }
+
+    public function orders() {
+        return $this->belongsToMany(Order::class, 'product_ordre_pivot');
+    }
 }

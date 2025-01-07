@@ -14,12 +14,14 @@ class AuthController extends Controller
         $request->validate([
             'first_name' => ['required'],
             'last_name' => ['required'],
+            'location' => ['required'],
             'phone_number' => ['required' , 'unique:users' , 'min:10' , 'max:10'],
             'password' => ['required', 'min:8'],
         ]);
         $user = User::query()->create([
             'first_name' => $request['first_name'],
             'last_name' => $request['last_name'],
+            'location' => $request['location'],
             'phone_number' => $request['phone_number'],
             'password' => $request['password'],
         ]);

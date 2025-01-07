@@ -15,11 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('photo');
-            $table->integer('price');
+            $table->double('price');
             $table->string('description');
             $table->integer('count');
             $table->boolean('available');
-            $table->foreignId('market_id')->constrained('markets')->cascadeOnDelete()->cascadeOnUpdate();
+            $table->foreignId('market_id')->constrained('markets')->cascadeOnDelete();
             $table->timestamps();
         });
     }
