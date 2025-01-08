@@ -72,4 +72,11 @@ class OrderController extends Controller
             ], 500);
         }
     }
+    public function getUserOrders($user_id){
+        $orders = $this->orderService->getUserOrders($user_id);
+        if (isset($orders['message'])) {
+            return response()->json($orders, 404);
+        }
+        return response()->json($orders, 200);
+    }
 }
