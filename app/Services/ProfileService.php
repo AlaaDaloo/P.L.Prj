@@ -18,7 +18,7 @@ class ProfileService
             'phone_number' => $user->phone_number,
             'profile_picture' => $user->profile_picture,
             'location' => $user->location,
-            'emai;' => $user->email
+            'email;' => $user->email
         ];
     }
 
@@ -39,7 +39,7 @@ class ProfileService
         if (isset($data['email'])) {
             $user->email = $data['email'];
         }
-        
+
         $user->save();
 
         return $user;
