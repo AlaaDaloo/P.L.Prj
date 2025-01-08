@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "ea0bd0bb-db66-4779-aa8f-27df6ae74934",
+		"_postman_id": "b9bcdc5b-80d1-4e54-b17f-f8482be7b33a",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "20212800",
-		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-ea0bd0bb-db66-4779-aa8f-27df6ae74934?action=share&source=collection_link&creator=20212800"
+		"_exporter_id": "39457052"
 	},
 	"item": [
 		{
@@ -51,7 +50,12 @@
 										},
 										{
 											"key": "password",
-											"value": "123456789",
+											"value": "12345678",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "damascus",
 											"type": "text"
 										}
 									]
@@ -1865,6 +1869,236 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "favorite",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getFavoringUsers/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getFavoringUsers",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "all Favorite products for all users",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getAllFavorite",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getAllFavorite"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 11:39:10 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"product_id\": 1,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 2,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 4,\n        \"user_id\": 1,\n        \"product_id\": 3,\n        \"created_at\": null,\n        \"updated_at\": null\n    }\n]"
+						},
+						{
+							"name": "favorite products for this user",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getFavoriteProducts/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getFavoriteProducts",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 11:46:29 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Orginal Wings\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Classic Burger\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 2\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Chicken fries\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 3\n        }\n    }\n]"
+						},
+						{
+							"name": "users favoriting this product",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getFavoringUsers/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getFavoringUsers",
+										"2"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 11:49:54 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"mohaamad\",\n        \"last_name\": \"aldebs\",\n        \"phone_number\": 969067449,\n        \"location\": \"damascus\",\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-01-08T09:46:29.000000Z\",\n        \"updated_at\": \"2025-01-08T09:46:29.000000Z\",\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"ddddd\",\n        \"last_name\": \"ddddddddd\",\n        \"phone_number\": 969067447,\n        \"location\": \"damascus\",\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-01-08T09:50:13.000000Z\",\n        \"updated_at\": \"2025-01-08T09:50:13.000000Z\",\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 2\n        }\n    }\n]"
+						}
+					]
 				}
 			]
 		},
@@ -1879,7 +2113,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "1|jtecnCHqbFBMfKoSRlGyLt1XA070ISQA1YYn9GqE37752977",
+									"value": "1|j59DwnMQ3QUAxIjc6samuyhLudvLZW6JgkdrwL20279d54f2",
 									"type": "string"
 								}
 							]
@@ -1894,7 +2128,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+							"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 10\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 10\n    },\n    {\n      \"id\": 3,\n      \"quantity\": 10\n    }\n  ]\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1927,7 +2161,7 @@
 								],
 								"body": {
 									"mode": "raw",
-									"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 2\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 1\n    }\n  ]\n}",
+									"raw": "{\n  \"products\": [\n    {\n      \"id\": 1,\n      \"quantity\": 10\n    },\n    {\n      \"id\": 2,\n      \"quantity\": 10\n    },\n    {\n      \"id\": 3,\n      \"quantity\": 10\n    }\n  ]\n}",
 									"options": {
 										"raw": {
 											"language": "json"
@@ -2065,6 +2299,415 @@
 							],
 							"cookie": [],
 							"body": "{\n    \"message\": \"The products.0.quantity field is required.\",\n    \"errors\": {\n        \"products.0.quantity\": [\n            \"The products.0.quantity field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "update order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|j59DwnMQ3QUAxIjc6samuyhLudvLZW6JgkdrwL20279d54f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 6\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"quantity\": 7\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/update_order/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"update_order",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 6\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"quantity\": 7\r\n    },\r\n    {\r\n      \"id\": 3,\r\n      \"quantity\": 10\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/update_order/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update_order",
+										"1"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 11:25:18 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Order updated successfully.\",\n    \"order\": {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 380000,\n        \"tax\": 4560,\n        \"delivery_charge\": 11400,\n        \"final_bill\": 395960,\n        \"created_at\": \"2025-01-08T09:47:47.000000Z\",\n        \"updated_at\": \"2025-01-08T11:19:04.000000Z\"\n    }\n}"
+						},
+						{
+							"name": "miss quantity",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"products\": [\r\n    {\r\n      \"id\": 1,\r\n      \"quantity\": 2\r\n    },\r\n    {\r\n      \"id\": 2,\r\n      \"quantity\": 21\r\n    },\r\n    {\r\n      \"id\": 3\r\n    }\r\n  ]\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/update_order/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"update_order",
+										"1"
+									]
+								}
+							},
+							"status": "Unprocessable Content",
+							"code": 422,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 11:26:41 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The products.2.quantity field is required.\",\n    \"errors\": {\n        \"products.2.quantity\": [\n            \"The products.2.quantity field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete order",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|j59DwnMQ3QUAxIjc6samuyhLudvLZW6JgkdrwL20279d54f2",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/delete_order/2",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"delete_order",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user ordwrs",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|KOoKv4DXZNTZ3dyqmPZ4lTBJYVuLUxN7UJosgQwz59e149f8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getUserOrders/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getUserOrders",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "no orders yet",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getUserOrders/2",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getUserOrders",
+										"2"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 22:30:34 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "57"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"no orders\"\n}"
+						},
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getUserOrders/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getUserOrders",
+										"1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Wed, 08 Jan 2025 22:31:04 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 350000,\n        \"tax\": 4200,\n        \"delivery_charge\": 10500,\n        \"final_bill\": 364700,\n        \"created_at\": \"2025-01-08T21:04:47.000000Z\",\n        \"updated_at\": \"2025-01-08T21:30:19.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 600000,\n        \"tax\": 7200,\n        \"delivery_charge\": 18000,\n        \"final_bill\": 625200,\n        \"created_at\": \"2025-01-08T21:06:08.000000Z\",\n        \"updated_at\": \"2025-01-08T21:06:08.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T21:31:50.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:58.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T22:07:11.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:11.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T22:07:36.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:36.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 200000,\n        \"tax\": 2400,\n        \"delivery_charge\": 6000,\n        \"final_bill\": 208400,\n        \"created_at\": \"2025-01-08T22:09:29.000000Z\",\n        \"updated_at\": \"2025-01-08T22:11:01.000000Z\"\n    }\n]"
 						}
 					]
 				}

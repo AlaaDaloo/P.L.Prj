@@ -2,7 +2,7 @@
 
 namespace App\Services;
 
-use App\Models\Product_Order_Pivot;
+use App\Models\ProductAndOrderPivot;
 use App\Models\User;
 use App\Models\Order;
 use App\Models\Product;
@@ -52,10 +52,15 @@ class OrderService
         foreach ($data['products'] as $productData) {
             $product = Product::findOrFail($productData['id']);
             $totalPrice += $product->price * $productData['quantity'];
-            $lastQuantity = Product_Order_Pivot::where('order_id' , $orderId)->value('quantity');
-            $product->count += $lastQuantity;
-            $newQuantity = $product->count - $productData['quantity'];
-            $product->update(['count' => $newQuantity]);
+            $product_id = $productData['id'];
+            $lastQuantity = ProductAndOrderPivot::where('order_id' , $orderId)->where('product_id' , $product_id)->value('quantity');
+            if($lastQuantity == $productData['quantity']) {
+                $product->update(['count' => $product->count += 0]);
+            }else{
+                $product->count += $lastQuantity;
+                $newQuantity = $product->count - $productData['quantity'];
+                $product->update(['count' => $newQuantity]);
+            }
         }
         $tax = $totalPrice * 0.012;
         $deliveryCharge = $totalPrice * 0.03;
@@ -79,12 +84,20 @@ class OrderService
     public function deleteOrder(int $order_id)
     {
         $order = Order::findOrFail($order_id);
-        $productQuantity = Product_Order_Pivot::where('order_id' , $order_id)->value('quantity');
-        $product_id = Product_Order_Pivot::where('order_id' , $order_id)->value('product_id');
+        $productQuantity = ProductAndOrderPivot::where('order_id' , $order_id)->value('quantity');
+        $product_id = ProductAndOrderPivot::where('order_id' , $order_id)->value('product_id');
         $productCount = Product::where('id', $product_id)->value('count');
         $count = $productCount + $productQuantity;
         $product = Product::where('id' , $product_id);
         $product->update(['count' => $count]);
         $order->delete();
     }
+    public function getUserOrders(int $userId)
+    {   $ordes = Order::where('user_id' , $userId)->get();
+        if ($ordes->isEmpty()) {
+            return ['message' => "no orders"];
+        }
+        return $ordes;
+        }
+
 }

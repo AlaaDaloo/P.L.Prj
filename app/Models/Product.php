@@ -15,7 +15,7 @@ class Product extends Model
     }
 
     public function orders() {
-        return $this->belongsToMany(Order::class, 'product_ordre_pivot');
+        return $this->belongsToMany(Order::class, 'product_and_order_pivots');
     }
 
     public function usersFavorite()

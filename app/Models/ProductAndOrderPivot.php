@@ -5,8 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Product_Order_Pivot extends Model
+class ProductAndOrderPivot extends Model
 {
     use HasFactory;
-    protected $table = 'product_order';
 }
