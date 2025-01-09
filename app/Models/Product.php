@@ -9,7 +9,15 @@ class Product extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['count'];
+    protected $fillable = [
+        'name',
+        'photo',
+        'price',
+        'description',
+        'count',
+        'available',
+        'market_id'
+    ];
     public function market(){
         return $this->belongsTo(Market::class);
     }
