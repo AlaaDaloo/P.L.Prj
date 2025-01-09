@@ -35,6 +35,9 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::put('/update_order/{id}', [OrderController::class, 'updateOrdre']);
     Route::delete('/delete_order/{id}', [OrderController::class, 'deleteOrdre']);
     Route::get('/getUserOrders', [OrderController::class, 'getUserOrders']);
+
+    Route::post('/createMarkets' , [DashBoardController::class , 'createMarkets']);
+    Route::post('/createProducts' , [DashBoardController::class , 'createProducts']);
 });
 Route::post('/register' , [AuthController::class , 'register']);
 Route::post('/login' , [AuthController::class , 'login']);
@@ -47,5 +50,3 @@ Route::get('/getAllFavorite' , [FavoriteController::class, 'getAllFavorite']);
 Route::get('/getFavoringUsers/{id}' , [FavoriteController::class, 'getFavoritingUsers']);
 Route::get('/getFavoriteProducts/{id}' , [FavoriteController::class, 'getFavoriteProducts']);
 
-Route::post('/createMarkets' , [DashBoardController::class , 'createMarkets']);
-Route::post('/createProducts' , [DashBoardController::class , 'createProducts']);

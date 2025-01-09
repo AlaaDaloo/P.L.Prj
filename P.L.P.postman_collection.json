@@ -1,10 +1,9 @@
 {
 	"info": {
-		"_postman_id": "9ab5012e-b865-48e1-9a9c-9f50a76db5c6",
+		"_postman_id": "8267aa17-5073-48bf-9bd0-3d8cf151b0e5",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "20212800",
-		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-9ab5012e-b865-48e1-9a9c-9f50a76db5c6?action=share&source=collection_link&creator=20212800"
+		"_exporter_id": "39457052"
 	},
 	"item": [
 		{
@@ -2650,8 +2649,24 @@
 				{
 					"name": "create markets",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|DEt1BZRcMWAx11QapjQDstXorzS2GoXaPUN0zumhfb3a2f3c",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
 						"body": {
 							"mode": "formdata",
 							"formdata": [
@@ -2691,10 +2706,16 @@
 					},
 					"response": [
 						{
-							"name": "success",
+							"name": "sucsess",
 							"originalRequest": {
 								"method": "POST",
-								"header": [],
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
 								"body": {
 									"mode": "formdata",
 									"formdata": [
@@ -2754,7 +2775,99 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Jan 2025 16:58:19 GMT"
+									"value": "Thu, 09 Jan 2025 22:23:34 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Market created successfully\",\n    \"market\": {\n        \"name\": \"aldeyar\",\n        \"photo\": \"aldeyar.jpj\",\n        \"location\": \"damascus\",\n        \"category_id\": \"2\",\n        \"updated_at\": \"2025-01-09T22:23:34.000000Z\",\n        \"created_at\": \"2025-01-09T22:23:34.000000Z\",\n        \"id\": 26\n    }\n}"
+						},
+						{
+							"name": "can't access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "aldeyar",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "aldeyar.jpj",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "damascus",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/createMarkets",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"createMarkets"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jan 2025 22:25:45 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -2774,13 +2887,23 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"message\": \"Market created successfully\",\n    \"market\": {\n        \"name\": \"aldeyar\",\n        \"photo\": \"aldeyar.jpj\",\n        \"location\": \"damascus\",\n        \"category_id\": \"2\",\n        \"updated_at\": \"2025-01-09T16:58:19.000000Z\",\n        \"created_at\": \"2025-01-09T16:58:19.000000Z\",\n        \"id\": 27\n    }\n}"
+							"body": "{\n    \"message\": \"You do not have permission to access this page\"\n}"
 						}
 					]
 				},
 				{
 					"name": "create product",
 					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "2|DEt1BZRcMWAx11QapjQDstXorzS2GoXaPUN0zumhfb3a2f3c",
+									"type": "string"
+								}
+							]
+						},
 						"method": "POST",
 						"header": [
 							{
@@ -2927,7 +3050,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Thu, 09 Jan 2025 17:01:57 GMT"
+									"value": "Thu, 09 Jan 2025 22:27:30 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -2947,7 +3070,114 @@
 								}
 							],
 							"cookie": [],
-							"body": "{\n    \"message\": \"Product created successfully\",\n    \"product\": {\n        \"name\": \"spoat light\",\n        \"photo\": \"spoat.jpj\",\n        \"price\": \"50000\",\n        \"description\": \"best spoat light\",\n        \"count\": \"1000\",\n        \"available\": \"1\",\n        \"market_id\": \"26\",\n        \"updated_at\": \"2025-01-09T17:01:57.000000Z\",\n        \"created_at\": \"2025-01-09T17:01:57.000000Z\",\n        \"id\": 126\n    }\n}"
+							"body": "{\n    \"message\": \"Product created successfully\",\n    \"product\": {\n        \"name\": \"spoat light\",\n        \"photo\": \"spoat.jpj\",\n        \"price\": \"50000\",\n        \"description\": \"best spoat light\",\n        \"count\": \"1000\",\n        \"available\": \"1\",\n        \"market_id\": \"26\",\n        \"updated_at\": \"2025-01-09T22:27:30.000000Z\",\n        \"created_at\": \"2025-01-09T22:27:30.000000Z\",\n        \"id\": 126\n    }\n}"
+						},
+						{
+							"name": "can't access",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "spoat light",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "spoat.jpj",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "best spoat light",
+											"type": "text"
+										},
+										{
+											"key": "count",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "available",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "market_id",
+											"value": "26",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/createProducts",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"createProducts"
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jan 2025 22:28:08 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"You do not have permission to access this page\"\n}"
 						}
 					]
 				}

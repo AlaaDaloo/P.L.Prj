@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Services\DashBoardService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DashBoardController extends Controller
 {
@@ -15,6 +17,14 @@ class DashBoardController extends Controller
     }
     public function createMarkets(Request $request)
     {
+        $user_id = Auth::id();
+        $userRole = User::where('id',$user_id)->value('role');
+        if ($userRole != 'admin') {
+            return response()->json([
+                'message' => 'You do not have permission to access this page'
+            ],403
+            );
+        }
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'photo' => 'required|string',
@@ -33,6 +43,16 @@ class DashBoardController extends Controller
 
     public function createProducts(Request $request)
     {
+
+        $user_id = Auth::id();
+        $userRole = User::where('id',$user_id)->value('role');
+        if ($userRole != 'admin') {
+            return response()->json([
+                'message' => 'You do not have permission to access this page'
+            ],403
+            );
+        }
+
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'photo' => 'required|string',
