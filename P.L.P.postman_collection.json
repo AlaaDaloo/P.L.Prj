@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "b9bcdc5b-80d1-4e54-b17f-f8482be7b33a",
+		"_postman_id": "9ab5012e-b865-48e1-9a9c-9f50a76db5c6",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39457052"
+		"_exporter_id": "20212800",
+		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-9ab5012e-b865-48e1-9a9c-9f50a76db5c6?action=share&source=collection_link&creator=20212800"
 	},
 	"item": [
 		{
@@ -2539,14 +2540,14 @@
 					"response": []
 				},
 				{
-					"name": "user ordwrs",
+					"name": "get user orders",
 					"request": {
 						"auth": {
 							"type": "bearer",
 							"bearer": [
 								{
 									"key": "token",
-									"value": "2|KOoKv4DXZNTZ3dyqmPZ4lTBJYVuLUxN7UJosgQwz59e149f8",
+									"value": "1|eKVqomUqxEMTjqNFFvFc5fWYF2392ipCYNAyQf7o76f90f63",
 									"type": "string"
 								}
 							]
@@ -2560,87 +2561,18 @@
 							}
 						],
 						"url": {
-							"raw": "localhost:8000/api/getUserOrders/1",
+							"raw": "localhost:8000/api/getUserOrders",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
 								"api",
-								"getUserOrders",
-								"1"
+								"getUserOrders"
 							]
 						}
 					},
 					"response": [
-						{
-							"name": "no orders yet",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "localhost:8000/api/getUserOrders/2",
-									"host": [
-										"localhost"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"getUserOrders",
-										"2"
-									]
-								}
-							},
-							"status": "Not Found",
-							"code": 404,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Host",
-									"value": "localhost:8000"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "PHP/8.2.12"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache, private"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 08 Jan 2025 22:30:34 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "X-RateLimit-Limit",
-									"value": "60"
-								},
-								{
-									"key": "X-RateLimit-Remaining",
-									"value": "57"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"body": "{\n    \"message\": \"no orders\"\n}"
-						},
 						{
 							"name": "success",
 							"originalRequest": {
@@ -2653,15 +2585,14 @@
 									}
 								],
 								"url": {
-									"raw": "localhost:8000/api/getUserOrders/1",
+									"raw": "localhost:8000/api/getUserOrders",
 									"host": [
 										"localhost"
 									],
 									"port": "8000",
 									"path": [
 										"api",
-										"getUserOrders",
-										"1"
+										"getUserOrders"
 									]
 								}
 							},
@@ -2679,7 +2610,7 @@
 								},
 								{
 									"key": "X-Powered-By",
-									"value": "PHP/8.2.12"
+									"value": "PHP/8.3.6"
 								},
 								{
 									"key": "Cache-Control",
@@ -2687,7 +2618,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 08 Jan 2025 22:31:04 GMT"
+									"value": "Thu, 09 Jan 2025 14:44:59 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -2699,7 +2630,7 @@
 								},
 								{
 									"key": "X-RateLimit-Remaining",
-									"value": "59"
+									"value": "56"
 								},
 								{
 									"key": "Access-Control-Allow-Origin",
@@ -2707,7 +2638,7 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 350000,\n        \"tax\": 4200,\n        \"delivery_charge\": 10500,\n        \"final_bill\": 364700,\n        \"created_at\": \"2025-01-08T21:04:47.000000Z\",\n        \"updated_at\": \"2025-01-08T21:30:19.000000Z\"\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 600000,\n        \"tax\": 7200,\n        \"delivery_charge\": 18000,\n        \"final_bill\": 625200,\n        \"created_at\": \"2025-01-08T21:06:08.000000Z\",\n        \"updated_at\": \"2025-01-08T21:06:08.000000Z\"\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T21:31:50.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:58.000000Z\"\n    },\n    {\n        \"id\": 4,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T22:07:11.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:11.000000Z\"\n    },\n    {\n        \"id\": 5,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"created_at\": \"2025-01-08T22:07:36.000000Z\",\n        \"updated_at\": \"2025-01-08T22:07:36.000000Z\"\n    },\n    {\n        \"id\": 6,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 200000,\n        \"tax\": 2400,\n        \"delivery_charge\": 6000,\n        \"final_bill\": 208400,\n        \"created_at\": \"2025-01-08T22:09:29.000000Z\",\n        \"updated_at\": \"2025-01-08T22:11:01.000000Z\"\n    }\n]"
+							"body": "[\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"is_deleted\": 0,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-09T14:44:53.000000Z\",\n        \"updated_at\": \"2025-01-09T14:44:53.000000Z\"\n    }\n]"
 						}
 					]
 				}
