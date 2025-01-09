@@ -14,13 +14,14 @@ return new class extends Migration
         Schema::create('orders', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
-            $table->string('order_status');
-            $table->string('payment_status');
+            $table->enum('order_status', ['Pending','On the way', 'Delivered', 'Cancelled']);
+            $table->enum('payment_status', ['Unpaid','Paid']);
             $table->string('location');
             $table->double('total_price');
             $table->double('tax')->default(1.2);
             $table->double('delivery_charge')->default(3);
-            $table->double('final_bill');
+            $table->double('final_bill');   
+            $table->softDeletes(); 
             $table->timestamps();
         });
     }
@@ -30,6 +31,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('orders');
+        Schema::table('orders', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 };
