@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DashBoardController;
 use App\Http\Controllers\FavoriteController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -45,3 +46,6 @@ Route::get('/search', [ProductController::class, 'search']);
 Route::get('/getAllFavorite' , [FavoriteController::class, 'getAllFavorite']);
 Route::get('/getFavoringUsers/{id}' , [FavoriteController::class, 'getFavoritingUsers']);
 Route::get('/getFavoriteProducts/{id}' , [FavoriteController::class, 'getFavoriteProducts']);
+
+Route::post('/createMarkets' , [DashBoardController::class , 'createMarkets']);
+Route::post('/createProducts' , [DashBoardController::class , 'createProducts']);

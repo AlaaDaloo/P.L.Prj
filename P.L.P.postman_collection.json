@@ -2712,6 +2712,315 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Dashboard",
+			"item": [
+				{
+					"name": "create markets",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "aldeyar",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "aldeyar.jpj",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "damascus",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/createMarkets",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createMarkets"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "aldeyar",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "aldeyar.jpj",
+											"type": "text"
+										},
+										{
+											"key": "location",
+											"value": "damascus",
+											"type": "text"
+										},
+										{
+											"key": "category_id",
+											"value": "2",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/createMarkets",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"createMarkets"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jan 2025 16:58:19 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Market created successfully\",\n    \"market\": {\n        \"name\": \"aldeyar\",\n        \"photo\": \"aldeyar.jpj\",\n        \"location\": \"damascus\",\n        \"category_id\": \"2\",\n        \"updated_at\": \"2025-01-09T16:58:19.000000Z\",\n        \"created_at\": \"2025-01-09T16:58:19.000000Z\",\n        \"id\": 27\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "create product",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "spoat light",
+									"type": "text"
+								},
+								{
+									"key": "photo",
+									"value": "spoat.jpj",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "50000",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "best spoat light",
+									"type": "text"
+								},
+								{
+									"key": "count",
+									"value": "1000",
+									"type": "text"
+								},
+								{
+									"key": "available",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "market_id",
+									"value": "26",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/createProducts",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"createProducts"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "name",
+											"value": "spoat light",
+											"type": "text"
+										},
+										{
+											"key": "photo",
+											"value": "spoat.jpj",
+											"type": "text"
+										},
+										{
+											"key": "price",
+											"value": "50000",
+											"type": "text"
+										},
+										{
+											"key": "description",
+											"value": "best spoat light",
+											"type": "text"
+										},
+										{
+											"key": "count",
+											"value": "1000",
+											"type": "text"
+										},
+										{
+											"key": "available",
+											"value": "1",
+											"type": "text"
+										},
+										{
+											"key": "market_id",
+											"value": "26",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/createProducts",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"createProducts"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Thu, 09 Jan 2025 17:01:57 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product created successfully\",\n    \"product\": {\n        \"name\": \"spoat light\",\n        \"photo\": \"spoat.jpj\",\n        \"price\": \"50000\",\n        \"description\": \"best spoat light\",\n        \"count\": \"1000\",\n        \"available\": \"1\",\n        \"market_id\": \"26\",\n        \"updated_at\": \"2025-01-09T17:01:57.000000Z\",\n        \"created_at\": \"2025-01-09T17:01:57.000000Z\",\n        \"id\": 126\n    }\n}"
+						}
+					]
+				}
+			]
 		}
 	]
 }
