@@ -39,6 +39,36 @@ class OrderController extends Controller
             ], 500);
         }
     }
+
+    public function getOrderDetails($order_id)
+    {
+        try {
+            $order = $this->orderService->getOrderDetails($order_id);
+            return response()->json([
+                'message' => 'Order details retrieved successfully.',
+                'order' => $order,
+            ]);
+        }catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Order details not found.',
+                'error' => $e->getMessage(),
+            ]);
+        }
+    }
+
+    public function getOrderProducts($orderId)
+    {
+        try {
+            $products = $this->orderService->getOrderProducts($orderId);
+            return response()->json([
+                'message' => 'Order products retrieved successfully.',
+                'products' => $products, ]);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Failed to retrieve order products.',
+                'error' => $e->getMessage(),
+                ], 500); }
+    }
     public function updateOrdre(Request $request, $order_id)
     {
         $validated = $request->validate([

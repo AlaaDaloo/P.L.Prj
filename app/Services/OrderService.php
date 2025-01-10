@@ -45,6 +45,18 @@ class OrderService
 
         return $order;
     }
+
+    public function getOrderDetails(int $orderId): Order
+    {
+        $order = Order::findOrFail($orderId);
+        return $order;
+    }
+
+    public function getOrderProducts($orderId)
+    {
+        $order = Order::findOrFail($orderId);
+        return $order->products;
+    }
     public function updateOrder(array $data, int $orderId)
     {
         $order = Order::findOrFail($orderId);
