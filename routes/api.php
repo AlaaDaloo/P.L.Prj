@@ -38,6 +38,8 @@ Route::middleware('auth:sanctum')->group(function(){
 
     Route::post('/createMarkets' , [DashBoardController::class , 'createMarkets']);
     Route::post('/createProducts' , [DashBoardController::class , 'createProducts']);
+    Route::post('/dashboard/market/picture/{id}', [DashBoardController::class , 'uploadMarketPicture']);
+    Route::post('/dashboard/product/picture/{id}', [DashBoardController::class , 'uploadProductPicture']);
 });
 Route::post('/register' , [AuthController::class , 'register']);
 Route::post('/login' , [AuthController::class , 'login']);
