@@ -9,7 +9,22 @@ use App\Models\User;
 
 class FavoriteService
 {
-    public function getFavoriteProducts($user_id)
+    public function addFavorite($userId, $productId)
+    {
+        return Favorite::create([
+            'user_id' => $userId,
+            'product_id' => $productId,
+        ]);
+    }
+
+    public function removeFavorite($userId, $productId)
+    {
+        return Favorite::where('user_id', $userId)
+            ->where('product_id', $productId)
+            ->delete();
+    }
+
+public function getFavoriteProducts($user_id)
     {
         $user = User::find($user_id)->favoriteProducts;
 

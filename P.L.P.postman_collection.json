@@ -1873,7 +1873,17 @@
 				{
 					"name": "favorite",
 					"request": {
-						"method": "GET",
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|2vmdHttbeN8fOllGCqMg9GUSaCVgcc6YXTGYSxLHaefc2025",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
 						"header": [
 							{
 								"key": "Accept",
@@ -1881,22 +1891,17 @@
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
 						"url": {
-							"raw": "localhost:8000/api/getFavoringUsers/2",
-							"host": [
-								"localhost"
-							],
-							"port": "8000",
-							"path": [
-								"api",
-								"getFavoringUsers",
-								"2"
-							]
+							"raw": ""
 						}
 					},
 					"response": [
 						{
-							"name": "all Favorite products for all users",
+							"name": "get favorite products for user",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -1907,14 +1912,14 @@
 									}
 								],
 								"url": {
-									"raw": "localhost:8000/api/getAllFavorite",
+									"raw": "localhost:8000/api/getFavoriteProducts",
 									"host": [
 										"localhost"
 									],
 									"port": "8000",
 									"path": [
 										"api",
-										"getAllFavorite"
+										"getFavoriteProducts"
 									]
 								}
 							},
@@ -1940,7 +1945,7 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 08 Jan 2025 11:39:10 GMT"
+									"value": "Fri, 10 Jan 2025 15:28:09 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -1960,78 +1965,10 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 1,\n        \"product_id\": 1,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 2,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 4,\n        \"user_id\": 1,\n        \"product_id\": 3,\n        \"created_at\": null,\n        \"updated_at\": null\n    }\n]"
+							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Orginal Wings\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-10T15:25:28.000000Z\",\n        \"updated_at\": \"2025-01-10T15:25:28.000000Z\",\n        \"pivot\": {\n            \"user_id\": 2,\n            \"product_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Classic Burger\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-10T15:25:28.000000Z\",\n        \"updated_at\": \"2025-01-10T15:25:28.000000Z\",\n        \"pivot\": {\n            \"user_id\": 2,\n            \"product_id\": 2\n        }\n    }\n]"
 						},
 						{
-							"name": "favorite products for this user",
-							"originalRequest": {
-								"method": "GET",
-								"header": [
-									{
-										"key": "Accept",
-										"value": "application/json",
-										"type": "text"
-									}
-								],
-								"url": {
-									"raw": "localhost:8000/api/getFavoriteProducts/1",
-									"host": [
-										"localhost"
-									],
-									"port": "8000",
-									"path": [
-										"api",
-										"getFavoriteProducts",
-										"1"
-									]
-								}
-							},
-							"status": "OK",
-							"code": 200,
-							"_postman_previewlanguage": "json",
-							"header": [
-								{
-									"key": "Host",
-									"value": "localhost:8000"
-								},
-								{
-									"key": "Connection",
-									"value": "close"
-								},
-								{
-									"key": "X-Powered-By",
-									"value": "PHP/8.2.12"
-								},
-								{
-									"key": "Cache-Control",
-									"value": "no-cache, private"
-								},
-								{
-									"key": "Date",
-									"value": "Wed, 08 Jan 2025 11:46:29 GMT"
-								},
-								{
-									"key": "Content-Type",
-									"value": "application/json"
-								},
-								{
-									"key": "X-RateLimit-Limit",
-									"value": "60"
-								},
-								{
-									"key": "X-RateLimit-Remaining",
-									"value": "59"
-								},
-								{
-									"key": "Access-Control-Allow-Origin",
-									"value": "*"
-								}
-							],
-							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Orginal Wings\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Classic Burger\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 2\n        }\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Chicken fries\",\n        \"photo\": \"http://localhost:8000/storage/profile_pictures/GGtmSjXuFSxBJwyUsPRk1oUSEmeaNQMpqo7Tp5RP.jpg\",\n        \"price\": 10000,\n        \"description\": \"Fast food\",\n        \"count\": 500,\n        \"available\": 1,\n        \"market_id\": 1,\n        \"created_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"updated_at\": \"2025-01-08T08:08:19.000000Z\",\n        \"pivot\": {\n            \"user_id\": 1,\n            \"product_id\": 3\n        }\n    }\n]"
-						},
-						{
-							"name": "users favoriting this product",
+							"name": "get users favoriting this product",
 							"originalRequest": {
 								"method": "GET",
 								"header": [
@@ -2076,7 +2013,74 @@
 								},
 								{
 									"key": "Date",
-									"value": "Wed, 08 Jan 2025 11:49:54 GMT"
+									"value": "Fri, 10 Jan 2025 15:30:24 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "59"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"admin\",\n        \"last_name\": \"admin\",\n        \"phone_number\": 0,\n        \"location\": null,\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"admin\",\n        \"created_at\": null,\n        \"updated_at\": null,\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"mohaamad\",\n        \"last_name\": \"aldebs\",\n        \"phone_number\": 969067449,\n        \"location\": \"damascus\",\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-01-10T15:25:43.000000Z\",\n        \"updated_at\": \"2025-01-10T15:25:43.000000Z\",\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 2\n        }\n    }\n]"
+						},
+						{
+							"name": "get favorite list",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/api/getAllFavorite",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"getAllFavorite"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jan 2025 15:31:17 GMT"
 								},
 								{
 									"key": "Content-Type",
@@ -2096,7 +2100,151 @@
 								}
 							],
 							"cookie": [],
-							"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"mohaamad\",\n        \"last_name\": \"aldebs\",\n        \"phone_number\": 969067449,\n        \"location\": \"damascus\",\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-01-08T09:46:29.000000Z\",\n        \"updated_at\": \"2025-01-08T09:46:29.000000Z\",\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 1\n        }\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"ddddd\",\n        \"last_name\": \"ddddddddd\",\n        \"phone_number\": 969067447,\n        \"location\": \"damascus\",\n        \"profile_picture\": null,\n        \"email\": null,\n        \"email_verified_at\": null,\n        \"role\": \"user\",\n        \"created_at\": \"2025-01-08T09:50:13.000000Z\",\n        \"updated_at\": \"2025-01-08T09:50:13.000000Z\",\n        \"pivot\": {\n            \"product_id\": 2,\n            \"user_id\": 2\n        }\n    }\n]"
+							"body": "[\n    {\n        \"id\": 1,\n        \"user_id\": 2,\n        \"product_id\": 1,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 2,\n        \"user_id\": 2,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    },\n    {\n        \"id\": 3,\n        \"user_id\": 1,\n        \"product_id\": 2,\n        \"created_at\": null,\n        \"updated_at\": null\n    }\n]"
+						},
+						{
+							"name": "add to favorite",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/addFavorite/11",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"addFavorite",
+										"11"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jan 2025 15:58:52 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product added to favorites successfully\",\n    \"favorite\": {\n        \"user_id\": 2,\n        \"product_id\": \"10\",\n        \"updated_at\": \"2025-01-10T15:58:52.000000Z\",\n        \"created_at\": \"2025-01-10T15:58:52.000000Z\",\n        \"id\": 5\n    }\n}"
+						},
+						{
+							"name": "remove from favorite",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": []
+								},
+								"url": {
+									"raw": "localhost:8000/api/removeFavorite/10",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"removeFavorite",
+										"10"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Host",
+									"value": "localhost:8000"
+								},
+								{
+									"key": "Connection",
+									"value": "close"
+								},
+								{
+									"key": "X-Powered-By",
+									"value": "PHP/8.2.12"
+								},
+								{
+									"key": "Cache-Control",
+									"value": "no-cache, private"
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 10 Jan 2025 16:02:49 GMT"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "60"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "58"
+								},
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"Product removed from favorites successfully\"\n}"
 						}
 					]
 				}
