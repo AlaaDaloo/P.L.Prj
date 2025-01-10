@@ -26,6 +26,6 @@ class Order extends Model
     protected $dates = ['deleted_at'];
 
     public function products() {
-        return $this->belongsToMany(product::class, 'product_and_order_pivots');
+        return $this->belongsToMany(product::class, 'product_and_order_pivots')->withPivot('quantity');
     }
 }
