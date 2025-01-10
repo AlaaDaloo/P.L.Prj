@@ -2788,6 +2788,78 @@
 							"body": "[\n    {\n        \"id\": 2,\n        \"user_id\": 1,\n        \"order_status\": \"Pending\",\n        \"payment_status\": \"Unpaid\",\n        \"location\": \"damascus\",\n        \"total_price\": 300000,\n        \"tax\": 3600,\n        \"delivery_charge\": 9000,\n        \"final_bill\": 312600,\n        \"is_deleted\": 0,\n        \"deleted_at\": null,\n        \"created_at\": \"2025-01-09T14:44:53.000000Z\",\n        \"updated_at\": \"2025-01-09T14:44:53.000000Z\"\n    }\n]"
 						}
 					]
+				},
+				{
+					"name": "order details",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|2vmdHttbeN8fOllGCqMg9GUSaCVgcc6YXTGYSxLHaefc2025",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getOrderDetails/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getOrderDetails",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get opder products",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|2vmdHttbeN8fOllGCqMg9GUSaCVgcc6YXTGYSxLHaefc2025",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/getOrderProducts/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"getOrderProducts",
+								"1"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},

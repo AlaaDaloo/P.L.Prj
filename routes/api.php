@@ -41,6 +41,8 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::post('/create_order', [OrderController::class, 'createOrdre']);
     Route::put('/update_order/{id}', [OrderController::class, 'updateOrdre']);
     Route::delete('/delete_order/{id}', [OrderController::class, 'deleteOrdre']);
+    Route::get('/getOrderDetails/{id}', [OrderController::class, 'getOrderDetails']);
+    Route::get('/getOrderProducts/{id}', [OrderController::class, 'getOrderProducts']);
     Route::get('/getUserOrders', [OrderController::class, 'getUserOrders']);
 
     Route::post('/createMarkets' , [DashBoardController::class , 'createMarkets']);
