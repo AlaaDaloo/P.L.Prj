@@ -1,9 +1,10 @@
 {
 	"info": {
-		"_postman_id": "8267aa17-5073-48bf-9bd0-3d8cf151b0e5",
+		"_postman_id": "711cdcf5-a34c-4144-9310-06965cb68ef5",
 		"name": "P.L.P",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "39457052"
+		"_exporter_id": "20212800",
+		"_collection_link": "https://speeding-zodiac-397084.postman.co/workspace/My-Workspace~8170659f-86ba-4831-896a-67f632302642/collection/20212800-711cdcf5-a34c-4144-9310-06965cb68ef5?action=share&source=collection_link&creator=20212800"
 	},
 	"item": [
 		{
@@ -3400,6 +3401,102 @@
 							"body": "{\n    \"message\": \"You do not have permission to access this page\"\n}"
 						}
 					]
+				},
+				{
+					"name": "upload market pic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|H8EG0ovNyIqrqfg6JLGmielaCF0dUkzZMvTn05ER8fd76aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "/home/alaa/Pictures/Screenshots/Screenshot from 2025-01-11 13-33-22.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dashboard/market/picture/26",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dashboard",
+								"market",
+								"picture",
+								"26"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "upload product pic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "1|H8EG0ovNyIqrqfg6JLGmielaCF0dUkzZMvTn05ER8fd76aa8",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "photo",
+									"type": "file",
+									"src": "postman-cloud:///1efbd642-0c40-4030-beba-798b60131a57"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/dashboard/product/picture/126",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dashboard",
+								"product",
+								"picture",
+								"126"
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		}
