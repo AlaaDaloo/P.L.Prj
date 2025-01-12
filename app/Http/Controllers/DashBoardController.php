@@ -57,7 +57,7 @@ class DashBoardController extends Controller
         }
 
         $market = Market::findOrFail($market_id);
-        $marketPicture = $this->dashboardService->uploadMarketPicture($market, $request->file('market_picture'));
+        $marketPicture = $this->dashboardService->uploadMarketPicture($market, $request->file('photo'));
 
         return response()->json(['message' => 'Market picture uploaded successfully', 'market_picture' => $marketPicture]);
     }
@@ -105,7 +105,7 @@ class DashBoardController extends Controller
         }
 
         $product = Product::findOrFail($product_id);
-        $productPicture = $this->dashboardService->uploadProductPicture($product, $request->file('product_picture'));
+        $productPicture = $this->dashboardService->uploadProductPicture($product, $request->file('photo'));
 
         return response()->json(['message' => 'Product picture uploaded successfully', 'product_picture' => $productPicture]);
     }
